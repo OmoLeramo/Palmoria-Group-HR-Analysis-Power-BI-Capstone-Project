@@ -47,5 +47,28 @@ Summarize total payouts by region and company-wide.
      - Employee above threshold = CALCULATE(COUNTROWS('Palmoria Group emp-data'), 'Palmoria Group emp-data'[Salary] > 90000)
      - Total Salary = 'Palmoria Group emp-data'[Salary] +'Palmoria Group emp-data'[Bonus Amount]
    - Bonus Amount = 'Palmoria Group emp-data'[Salary]*IF('Palmoria Group emp-data'[Rating]="Very Poor", RELATED('bonus mapping'[Very Poor]),IF('Palmoria Group emp-data'[Rating]="Poor",RELATED('bonus mapping'[Poor]),IF('Palmoria Group emp-data'[Rating]="Average",RELATED('bonus mapping'[Average]),IF('Palmoria Group emp-data'[Rating]="Good",RELATED('bonus mapping'[Good]),IF('Palmoria Group emp-data'[Rating]="Very Good",RELATED('bonus mapping'[Very Good]),BLANK())))))
+     ## Insights & Interpretations
+- Gender Distribution
+   - Male employees represent 52.1% of the workforce, while females make up 43.2%, and 4.3% chose not to disclose.
+   - This suggests potential gender imbalance, especially in certain departments and regions (e.g., North West).
+- Salary Structure & Pay Gap
+  - Average salary across the organization is $90,035.
+  - shows a gender pay gap, particularly in Legal, Support, and Engineering departments, where male employees earn significantly more on average than female employees.
+  - Approximately 105 employees earn below the $90,000 regulatory minimum, highlighting an immediate compliance risk.
+- Salary Band Distribution
+   - A large number of employees fall into lower salary bands ($20,000–$60,000), emphasizing the need for salary adjustments to retain talent and meet legal requirements.
+-  Bonus Allocation
+   - Total bonus payout is $2,199,279, with the highest allocations in the North Central and North West regions.
+   - Aligning bonus distribution with fair and transparent performance reviews can help improve employee satisfaction and reduce perceived bias.
+- Department & Region Focus
+  -  Departments such as Legal, Support, and Engineering show significant male dominance and wider pay gaps, suggesting these areas should be prioritized for corrective actions.
+  -   North West region exhibits the largest male workforce concentration.
+   ## Overall Recommendations
+- Address pay gaps by reviewing and adjusting salaries in targeted departments.
+- Ensure regulatory compliance by immediately raising salaries below $90,000.
+- Promote more balanced gender representation, especially in male-dominated areas.
+- Improve transparency and fairness in performance appraisals and bonus policies to foster employee trust.
+
+
    ![Screenshot (85)](https://github.com/user-attachments/assets/4df974ba-3627-4b48-aee1-6549db19984f)
 ![Screenshot (78)](https://github.com/user-attachments/assets/b1d284f5-37f9-43f2-b6e6-56d1b7c14276)
