@@ -36,7 +36,9 @@ Visualization of salary distribution by region.
 Calculate bonus amount for each employee using provided performance-based rules, 
 Compute total pay (salary + bonus) per employee, 
 Summarize total payouts by region and company-wide.
-   ## Dax Measures Used
+  ## DAX Functions (SWITCH, AVERAGE, COUNT, calculated columns)
+## Visuals: Pie Charts, Clustered Bar/Column Charts, Matrix, Tables, Slicers
+    ## Dax Measures Used
    - Average Rating = AVERAGE('Palmoria Group emp-data'[Rating])
    - Average Salary = AVERAGE('Palmoria Group emp-data'[Salary])
    - Numeric Rating = SWITCH('Palmoria Group emp-data'[Rating],"Poor", 1,
@@ -68,6 +70,8 @@ Summarize total payouts by region and company-wide.
 - Ensure regulatory compliance by immediately raising salaries below $90,000.
 - Promote more balanced gender representation, especially in male-dominated areas.
 - Improve transparency and fairness in performance appraisals and bonus policies to foster employee trust.
+  ## Status
+  - Completed
 
 
    ![Screenshot (85)](https://github.com/user-attachments/assets/4df974ba-3627-4b48-aee1-6549db19984f)
